@@ -41,7 +41,6 @@ import express from "express";
 const app = express();
 const port = 3000;
 
-
 // .get method is comes from thw express that we use here, after that we give here the path here the path is root folde "/"
 app.get("/", (req,res)=>{
   res.send("<h1>Hello this is get</h1>")
