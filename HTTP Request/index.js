@@ -40,12 +40,23 @@ There are 5 main words by using those they communicate with each other it means 
 import express from "express";
 const app = express();
 const port = 3000;
-
-// .get method is comes from thw express that we use here, after that we give here the path here the path is root folde "/"
+// This code allows us to handle the get code
+// .get method is comes from thw express that we use here, after that we give here the path here the path is root folde "/".
+// By using res.send we send the response.
 app.get("/", (req,res)=>{
-  res.send("<h1>Hello this is get</h1>")
+  res.send("<h1>This is the Home Page")
+})
+
+// Now we add about endpoint and get about page.
+app.get("/about", (req,res)=>{
+  res.send("<h1>This is the about Page")
+})
+
+app.get("/services", (req,res)=>{
+  res.send("<h1>This is the services Page")
 })
 
 app.listen(port, ()=>{
   console.log(`Server is running on ${port}`);
 })
+
