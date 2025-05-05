@@ -9,7 +9,6 @@
 4. Client error response (400-499).
 5. Server error response (500-599).
 
-
 ✅ 1xx – Informational
 | Code | Meaning             | Use Case                               |
 | ---- | ------------------- | -------------------------------------- |
